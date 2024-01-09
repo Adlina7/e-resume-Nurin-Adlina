@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif ;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #272d2d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #0B3C49;
+}
+
+body{
+    background-color: #CCA657;
+}
+
+.wrapper{
+    position: relative;
+    font-family: 'Poppins';
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.top_div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.top_div h1{
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.top_div hr{
+    position: relative;
+    width: 60px;
+    height: 4px;
+    border: none;
+    background: #1ABC9C;
+}
+
+.content{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.content h2{
+    font-size: 18px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.content p{
+    font-size: 13px;
+    line-height: 1.4;
+
+}
+
+footer {
+    background-color: #CCA657;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

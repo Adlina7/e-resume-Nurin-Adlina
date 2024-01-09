@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif ;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #272D2D;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #0B3C49;
+}
+
+body{
+    background-color: #CCA657;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'poppins';
+}
+
+.img img{
+    width: 350px;
+    padding: 0 10% ;
+}
+
+.h1{
+    font-size: 58px;
+    color: #fff;
+    position: relative;
+}
+
+h1::after{
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 4px;
+    left: 0;
+    bottom: 2px;
+}
+
+.video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .video-container video {
+    /* it makes the video mobile responsive */
+    max-width: 100%;
+  }
+  @media (min-width: 768px) {
+    .video-container video {
+      /* for larger screens */
+      max-width: 700px;
+    }
+  }
+
+  h2{
+    font-size: 45px;
+    color: black;
+    position: relative;
+    text-align: center;
+    margin: 50px;
+  }
+
+  footer {
+    background-color: #CCA657;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+  
+
+
+

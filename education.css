@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif ;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #272d2d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #0B3C49;
+}
+
+body{
+    background-color: #CCA657;
+}
+
+h1{
+    font-size: 45px;
+    color: #0B3C49;
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+}
+
+.timeline-section{
+    min-height: 100vh;
+    padding: 0px 15px;
+}
+
+.timeline-items{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #0B3C49;
+    left: calc(50% - 1px);
+}
+
+.timeline-item{
+    margin-bottom: 40pxs;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: #FFDAC6;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 18px;
+    color:#0B3C49;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: #FFDAC6;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: black;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.timeline-content p{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+}
+
+footer {
+    background-color: #CCA657;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
